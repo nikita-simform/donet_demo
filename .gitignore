@@ -55,3 +55,23 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# IDE / editor files
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Test coverage / publish output
+coverage/
+TestResults/
+publish/
+*.pubxml

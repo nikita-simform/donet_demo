@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.12" />
+  </ItemGroup>
+
+  <!-- LibraryApi is a separate project nested in this folder (Day 3) — exclude its
+       files from this project's default compile glob so they aren't double-compiled. -->
+  <ItemGroup>
+    <Compile Remove="LibraryApi/**/*.cs" />
+    <Content Remove="LibraryApi/**/*" />
+    <None Remove="LibraryApi/**/*" />
+  </ItemGroup>
+
+</Project>
